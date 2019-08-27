@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/menu/menu",
+    "pages/logs/logs",
+    "pages/buycart/cart"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -9,5 +11,31 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/app_img/home.png",
+        "selectedIconPath": "assets/app_img/home_sel.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "点餐",
+        "iconPath": "assets/app_img/order.png",
+        "selectedIconPath": "assets/app_img/order_sel.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "旅游",
+        "iconPath": "assets/app_img/tourism.png",
+        "selectedIconPath": "assets/app_img/tourism_sel.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 3000
+  }
 }
