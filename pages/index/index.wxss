@@ -1,4 +1,7 @@
 /**index.wxss**/
+.container{
+  padding: 200rpx 0;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -16,8 +19,8 @@
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.btn-begin {
+  margin-top: 400rpx;
 }
 
 .block{
