@@ -37,5 +37,8 @@
   },
   "networkTimeout": {
     "request": 3000
-  }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxd1807fae7980b9df"
+  ]
 }

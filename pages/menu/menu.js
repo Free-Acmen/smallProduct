@@ -1,5 +1,5 @@
 Page({
   data: {
-    title: 'menu page'
+    title: ' CEO 练习生 快捷跳转'
   }
 })

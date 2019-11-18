@@ -1,4 +1,7 @@
 <!--pages/menu/menu.wxml-->
 <view class="container">
   <text>{{title}}</text>
+  <view class="block">
+    <button size="mini" bindtap="skip">跳转测试</button>
+  </view>
 </view>

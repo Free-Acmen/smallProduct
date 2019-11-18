@@ -6,7 +6,12 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    ceoItem:[
+      'pages/active/commodityDetails.html?id=6720872735',
+      'pages/active/commodityDetails.html?id=6720872735',
+      'pages/active/commodityDetails.html?id=6720872735',
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -53,6 +58,20 @@ Page({
   getInfo: function(){
     app.http({url: 'Account/GetUserInfo'}).then( res => {
       console.log(res)
+    })
+  },
+  skip: function(event){
+    console.log(event.currentTarget.dataset.gid)
+    wx.navigateToMiniProgram({
+      appId: 'wxd1807fae7980b9df',
+      path: 'pages/active/commodityDetails.html?id=6720872735',
+      extraData: {
+        id: '6720872735'
+      },
+      envVersion: 'develop',
+      success(res) {
+        console.log(5555)
+      }
     })
   }
 })

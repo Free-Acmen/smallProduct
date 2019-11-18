@@ -9,10 +9,10 @@
   </view>
   
   <view class="btn-begin block">
-    <button class="block-btn" size="mini" type="primary" bindtap="getInfo">登陆</button>
+    <!-- <button class="block-btn" size="mini" type="primary" bindtap="getInfo">登陆</button> -->
   </view>
-  <view class="block">
-    <button size="mini">注册</button>
+  <view class="block" wx:for="{{ceoItem}}" wx:key="{{index}}">
+    <button size="mini" data-gid='{{item}}' bindtap="skip">CEO 产品1</button>
   </view>
 </view>
 
